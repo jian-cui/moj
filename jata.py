@@ -17,7 +17,7 @@ def get_nc_data(url, *args):
         try:
             data[arg] = nc.variables[arg]
         except (IndexError, NameError, KeyError):
-            print 'Dataset %s is not found' % arg
+            print 'Dataset {0} is not found'.format(arg)
     return data
 
 def input_with_default(data, v_default):
