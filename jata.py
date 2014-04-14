@@ -27,7 +27,7 @@ def input_with_default(data, v_default):
     '''
     l = (data, str(v_default))
     try:
-        data_input = input('Please input %s(default %s): ' % l)
+        data_input = input('Please input %s(default %s)(If don\'t want to make change, press "Enter"): ' % l)
     except SyntaxError:
         data_output = v_default
     else:
